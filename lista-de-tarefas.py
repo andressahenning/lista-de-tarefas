@@ -1,4 +1,5 @@
-lista_de_tarefas = ["Ler", "Escrever"]
+lista_de_tarefas = []
+
 
 def adicionar_tarefa():
     exibir_tarefa()
@@ -9,7 +10,7 @@ def adicionar_tarefa():
 def exibir_tarefa():
     print("\n")
     for i, tarefa in enumerate(lista_de_tarefas):
-        print(f"{i}-{tarefa}")
+        print(f"{i+1}-{tarefa}")
 
 
 def alterar_tarefa():
