@@ -35,6 +35,12 @@ def remover_tarefa():
             print(f"{tarefa} não foi encontrada.")
 
 
+
+def re_iniciar_lista():
+    lista_de_tarefas.clear()
+    print('A lista Esta Vazia')
+
+
 while True:
 
     try:
@@ -42,7 +48,8 @@ while True:
         print("2-Exibir tarefa")
         print("3-Remover tarefa")
         print("4-Alterar tarefa")
-        print("5-Sair \n")
+        print("5-Reiniciar a Lista de tarefas")
+        print("6-Sair \n")
 
         opcao = int(input("Qual tarefa deseja executar ? "))
 
@@ -56,6 +63,8 @@ while True:
             case 4:
                 alterar_tarefa()
             case 5:
+                re_iniciar_lista()
+            case 6:
                 break
             case _:
                 print("Opção inválida \n")
